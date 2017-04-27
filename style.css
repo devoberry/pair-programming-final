@@ -1,0 +1,146 @@
+/*
+* ----------------------------------------------------------------------------------------
+* 01.GLOBAL CSS STYLe
+* 03.HOMEPAGE CSS STYLE
+* 04.ABOUT CSS STYLE
+* 10.ISSUE CSS STYLE
+* 11.FOOTER CSS STYLE
+
+
+
+need to add google fonts
+
+<link href="https://fonts.googleapis.com/css?family=Raleway:900" rel="stylesheet">
+* ----------------------------------------------------------------------------------------
+*/
+
+
+html{
+    height: 100%;
+     background: linear-gradient(270deg, #2a9f81, #8298dd, #00218a);
+    background-size: 600% 600%;
+
+        -webkit-animation: AnimationName 30s ease infinite;
+        animation: AnimationName 30s ease infinite;
+
+        @-webkit-keyframes AnimationName {
+            0%{background-position:0% 50%}
+            50%{background-position:100% 50%}
+            100%{background-position:0% 50%}
+        }
+        @keyframes AnimationName { 
+            0%{background-position:0% 50%}
+            50%{background-position:100% 50%}
+            100%{background-position:0% 50%}
+        }
+}
+    
+body{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 300;
+    line-height: 26px;
+    color:#fff;
+    height: 100%;
+    padding: 3%;
+   
+   
+
+}
+
+h1,
+h2,
+h3,
+h4
+{
+    letter-spacing: 1px;
+    font-weight: 900;
+}
+
+h2.articleheader{
+    line-height: 50px;
+    font-size: 40px;
+}
+
+h5,
+h6{
+    line-height: 20px;
+    font-size: 12px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    margin: 0em auto;
+    padding-left: 6%;
+    padding-right: 5%;
+}
+
+p {
+    font-weight: 300;
+}
+
+article{
+    margin: 5em auto;
+    padding: 5%;
+    background-color: rgba(204, 255, 255, .2);
+    border: 15px solid #fafafa;
+
+}
+a {
+text-decoration: none;
+    -webkit-transition: all 0.4s;
+    -webkit-transition: all 0.2s;
+    transition: all 0.2s;
+    color: #ccffff;
+}
+
+a:hover {
+    color: #aaa;
+    text-decoration: none;
+}
+
+a:focus {
+    outline: none;
+    text-decoration: none;
+}
+
+header{
+    align-content: center;
+    height: 10%;
+    width: 50%;
+    top:0;
+    left:0;
+    position: relative;
+    padding-left: 30%;
+    z-index: -1;
+    margin: 10%;
+}
+img.logo{
+
+    margin: 5%;
+    width: 20%;
+    
+}
+
+figure {
+     position: relative;
+}
+figure img {
+    display: block;
+}
+figcaption {
+    background: rgba(0, 0, 0, 0.8);
+    color: #FFF;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 0% .7%;
+    margin-left: 5.4%;
+    margin-right: 4.6%;
+    margin-bottom: .3%
+}
+
+.header{
+    width:90%;
+    margin-top: 2%;
+    margin-left: 5%;
+    border: 3px solid #ffffff;
+}
