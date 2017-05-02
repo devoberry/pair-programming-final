@@ -1,13 +1,107 @@
+
 <!DOCTYPE html>
 <html>
-<head>
+<head><title>Authors</title>
+
     
-    <title>
-    </title>
+    <link href="style.css" rel="stylesheet" type="text/css"/>
+       <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+        <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+<link rel="icon" href="favicon.ico" type="image/x-icon">
     </head>
 <body>
     
-    <h1>rebecca edit</h1>
     
+    <!--    Made by Erik Terwan    -->
+<!--   24th of November 2015   -->
+<!--    All rights reserved    -->
+<nav role="navigation">
+  <div id="menuToggle">
+    <!--
+    A fake / hidden checkbox is used as click reciever,
+    so you can use the :checked selector on it.
+    -->
+    <input type="checkbox" />
+    
+    <!--
+    Some spans to act as a hamburger.
+    
+    They are acting like a real hamburger,
+    not that McDonalds stuff.
+    -->
+    <span></span>
+    <span></span>
+    <span></span>
+    
+    <!--
+    Too bad the menu has to be inside of the button
+    but hey, it's pure CSS magic.
+    -->
+    <ul id="menu">
+      <a href="home-page.html"><li>Home</li></a>
+      <a href="Authors.html"><li>Authors</li></a>
+      <a href="Issue1.html"><li>The Great Barrier Reef</li></a>
+      <a href="Issue2.html"><li>Plastics</li></a>
+      <a href="Issue3.html" target="_blank"><li>Issue3</li></a>
+        <a href="Map.html" target="_blank"><li>Whos Fault</li></a>
+    </ul>
+  </div>
+</nav>
+                
+    <header><img class="logo" src="Logo-500.png"/></header>
+    <h1><center>Get to know the authors behind NAME OF OUR WEBSITE</center></h1>
+<div class="container">
+   <div class="column"><h3><center>Amina Switzer</center></h3>
+    <br><img  src="https://scontent.ftul1-1.fna.fbcdn.net/v/t1.0-9/18034271_1553777164633125_181177155576292097_n.jpg?oh=d38a8c77506d4c0748be69c779920826&oe=598992BD" alt="Amina Switzer">
+       <br><p>Here's a paragraph about this person. Blah blah blah blah blah blah blah Blah blah blah blah blah blah blah Blah blah blah blah blah blah blah Blah blah blah blah blah blah blah Blah blah blah blah blah blah blah Blah blah blah blah blah blah blah Blah blah blah blah blah blah blah Blah blah blah blah blah blah blah.</p>
+       <br><a href="tel:1-408-555-5555">1-408-555-5555</a>
+    </div>
+    <div class="column"><h3><center>Rebecca Walters</center></h3>
+     <br><img src= "https://scontent.ftul1-1.fna.fbcdn.net/v/t1.0-9/18118707_10209088362906397_7321389130691921445_n.jpg?oh=00e921a6ed7b9ac38015c1b90c61718d&oe=598FEE5C" alt="Rebecca Walters">
+        <br><p>Here's a paragraph about this person. Blah blah blah blah blah blah blah Blah blah blah blah blah blah blah Blah blah blah blah blah blah blah Blah blah blah blah blah blah blah Blah blah blah blah blah blah blah Blah blah blah blah blah blah blah Blah blah blah blah blah blah blah Blah blah blah blah blah blah blah.</p>
+        <br><a href="tel:1-408-555-5555">1-408-555-5555</a>
+    </div>
+   <div class="column"><h3><center>Devon Gadberry</center></h3>
+       <br><img src="https://scontent.ftul1-1.fna.fbcdn.net/v/t1.0-9/17264495_1221889751197498_1564907108621759100_n.jpg?oh=ee021be2962d6474137a09f61f21fd76&oe=597C0214" alt="Devon Gadberry">
+       <br><p>Here's a paragraph about this person. Blah blah blah blah blah blah blah Blah blah blah blah blah blah blah Blah blah blah blah blah blah blah Blah blah blah blah blah blah blah Blah blah blah blah blah blah blah Blah blah blah blah blah blah blah Blah blah blah blah blah blah blah Blah blah blah blah blah blah blah.</p>
+       <br><a href="tel:1-408-555-5555">1-408-555-5555</a>
+    </div>
+</div>
+<!--
+    <a class="twitter-timeline"  href="https://twitter.com/search?q=%40AminaSwitzer" data-widget-id="858521212695310337">Tweets about @AminaSwitzer</a>
+            <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+-->
+    <center>
+  <form id="contact" action="" method="post">
+    <h3>Quick Contact</h3>
+    <h4>Contact us today</h4>
+    <fieldset>
+      <input placeholder="Your name" type="text" tabindex="1" required autofocus>
+    </fieldset>
+    <fieldset>
+      <input placeholder="Your Email Address" type="email" tabindex="2" required>
+    </fieldset>
+    <fieldset>
+      <input placeholder="Your Phone Number" type="tel" tabindex="3" required>
+    </fieldset>
+    <fieldset>
+      <input placeholder="Your Web Site starts with http://" type="url" tabindex="4" required>
+    </fieldset>
+    <fieldset>
+      <textarea placeholder="Type your Message Here...." tabindex="5" required></textarea>
+    </fieldset>
+    <fieldset>
+      <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
+    </fieldset>
+      <!--THIS IS OVERLAPPING... LEARN HOW TO FIX IT SO RN EVERYTHING IS MESSED UP-->
+  </form>
+</center>
+    <script src="scripts.js"></script>
     </body>
 </html>
+<!--
+Here's what I need:
+twitter timeline code
+resumes from each of the girls
+iphone calling and texting links
+-->
