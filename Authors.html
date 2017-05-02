@@ -8,67 +8,174 @@
         img.authors{
             width: 400px;
             height: 400px;
-            position:fixed;
             float:left;
+            text-align: justify;
+            margin: 10px;
         }
         form{
             position:absolute;
             bottom: 20px;
         }
-    div.container {
-  clear: both;
+   div.container {
+        width: 100%;
+}
+        p.bio{
+            margin: 10px;
+            max-width: 400px;
+        }
+ /* Here starts the CSS for this page. Here's where I got the code and it has a good explanation:
+        https://developer.mozilla.org/en-US/docs/Learn/HTML/Forms/Your_first_HTML_form
+        */
+        form {
+  /* Just to center the form on the page */
+  margin: 0 auto;
+  width: 400px;
+  /* To see the outline of the form */
+  padding: 1em;
+  border: 1px solid #CCC;
+  border-radius: 1em;
+}
+
+form div + div {
+  margin-top: 1em;
+}
+
+label {
+  /* To make sure that all labels have the same size and are properly aligned */
+  display: inline-block;
+  width: 90px;
+  text-align: right;
+}
+
+input, textarea {
+  /* To make sure that all text fields have the same font settings
+     By default, textareas have a monospace font */
+  font: 1em sans-serif;
+
+  /* To give the same size to all text fields */
+  width: 300px;
+  box-sizing: border-box;
+
+  /* To harmonize the look & feel of text field border */
+  border: 1px solid #999;
+}
+
+input:focus, textarea:focus {
+  /* To give a little highlight on active elements */
+  border-color: #000;
+}
+
+textarea {
+  /* To properly align multiline text fields with their labels */
+  vertical-align: top;
+
+  /* To give enough room to type some text */
+  height: 5em;
+}
+
+.button {
+  /* To position the buttons to the same position of the text fields */
+  padding-left: 90px; /* same size as the label elements */
+}
+
+button {
+  /* This extra margin represent roughly the same space as the space
+     between the labels and their text fields */
+  margin-left: .5em;
 }
     </style>
     </head>
 <body>
     <h1><center>Get to know the authors behind NAME OF OUR WEBSITE</center></h1>
-<div class="container">
-   <div class="column-left"><h3><center>Amina Switzer</center></h3>
-    <br><img class="authors" src="https://scontent.ftul1-1.fna.fbcdn.net/v/t1.0-9/18034271_1553777164633125_181177155576292097_n.jpg?oh=d38a8c77506d4c0748be69c779920826&oe=598992BD" alt="Amina Switzer">
-       <br><p>Here's a paragraph about this person. Blah blah blah blah blah blah blah Blah blah blah blah blah blah blah Blah blah blah blah blah blah blah Blah blah blah blah blah blah blah Blah blah blah blah blah blah blah Blah blah blah blah blah blah blah Blah blah blah blah blah blah blah Blah blah blah blah blah blah blah.</p>
-       <br><a href="tel:1-408-555-5555">1-408-555-5555</a>
+<table border="0">
+<center>
+    <center><tr>
+<td><center>Amina Switzer</center></td>
+<td><center>Rebecca Walters</center></td>
+<td><center>Devon Gadberry</center></td>
+</tr></center>
+<tr>
+<td><img class="authors" src="https://scontent.ftul1-1.fna.fbcdn.net/v/t1.0-9/18034271_1553777164633125_181177155576292097_n.jpg?oh=d38a8c77506d4c0748be69c779920826&oe=598992BD" alt="Amina Switzer"/></td>
+<td><img class="authors" src= "https://scontent.ftul1-1.fna.fbcdn.net/v/t1.0-9/18118707_10209088362906397_7321389130691921445_n.jpg?oh=00e921a6ed7b9ac38015c1b90c61718d&oe=598FEE5C" alt="Rebecca Walters"/></td>
+<td><img class="authors" src="https://scontent.ftul1-1.fna.fbcdn.net/v/t1.0-9/17264495_1221889751197498_1564907108621759100_n.jpg?oh=ee021be2962d6474137a09f61f21fd76&oe=597C0214" alt="Devon Gadberry"/></td>
+</tr>
+
+<tr>
+<td>
+    <p class="bio">Rebecca Walters is a junior at the 
+University of Oklahoma, studying 
+broadcast and online journalism. She's 
+worked on OUNightly since she was a 
+first semester freshman. She's worked 
+her way up to roles of web editor, 
+anchor and producer. Rebecca enjoys 
+skiing, makeup and the works of Kurt 
+Vonnegut. Above all, she is passionate 
+about combining data and human 
+perspective to tell important stories. 
+Check out her resume for more details 
+on what Rebecca's all about.<br>
+        <a href="/pair programming project/Devon-Gadberry-Resume.pdf" download>Download her resume here</a>
+    <br><a href="tel:1-408-555-5555">Call Amina</a>
+    <br><a href="sms:1-408-555-1212">Text Amina</a>
+    </p>
+    </td>
+<td>
+    <p class="bio">Rebecca Walters is a junior at the 
+University of Oklahoma, studying 
+broadcast and online journalism. She's 
+worked on OUNightly since she was a 
+first semester freshman. She's worked 
+her way up to roles of web editor, 
+anchor and producer. Rebecca enjoys 
+skiing, makeup and the works of Kurt 
+Vonnegut. Above all, she is passionate 
+about combining data and human 
+perspective to tell important stories. 
+Check out her resume for more details 
+on what Rebecca's all about.<br>
+        <a href="/pair programming project/Devon-Gadberry-Resume.pdf" download>Download her resume here</a>
+    <br><a href="tel:1-408-555-5555">Call Rebecca</a>
+    <br><a href="sms:1-408-555-1212">Text Rebecca</a>
+    </p>
+    </td>
+<td>
+    <p class="bio"> Some think technology replaced our longing for magic... I say technology IS magic. With a few strokes of a keyboard, Art and Software combine to animate a logo onto the screen. A few clicks of a mouse can take a user to distant lands. As a student at the University of Oklahoma, I want to make that magic happen. Whether I'm coding for hours on end perfecting the padding, or I'm keyframing every single position of a motion graphic, I strive to create magic for the viewer with my work. <br>
+        <a href="/pair programming project/Devon-Gadberry-Resume.pdf" download>Download her resume here. </a>
+    <br><a href="tel:1-408-555-5555">Call Devon</a>
+    <br><a href="sms:1-408-555-1212">Text Devon</a>
+    </p>
+    
+    </td>
+</tr>
+</center>
+</table>
+<footer>
+    
+<form action="/my-handling-form-page" method="post">
+    <div>
+        <h3>Get in touch</h3>
+        <h4>We want to hear from you!</h4>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="user_name">
     </div>
-    <div class="column-center"><h3><center>Rebecca Walters</center></h3>
-     <br><img class="authors" src= "https://scontent.ftul1-1.fna.fbcdn.net/v/t1.0-9/18118707_10209088362906397_7321389130691921445_n.jpg?oh=00e921a6ed7b9ac38015c1b90c61718d&oe=598FEE5C" alt="Rebecca Walters">
-        <br><p>Here's a paragraph about this person. Blah blah blah blah blah blah blah Blah blah blah blah blah blah blah Blah blah blah blah blah blah blah Blah blah blah blah blah blah blah Blah blah blah blah blah blah blah Blah blah blah blah blah blah blah Blah blah blah blah blah blah blah Blah blah blah blah blah blah blah.</p>
-        <br><a href="tel:1-408-555-5555">1-408-555-5555</a>
+    <div>
+        <label for="mail">E-mail:</label>
+        <input type="email" id="mail" name="user_mail">
     </div>
-   <div class="column-right"><h3><center>Devon Gadberry</center></h3>
-       <br><img class="authors" src="https://scontent.ftul1-1.fna.fbcdn.net/v/t1.0-9/17264495_1221889751197498_1564907108621759100_n.jpg?oh=ee021be2962d6474137a09f61f21fd76&oe=597C0214" alt="Devon Gadberry">
-       <br><p>Here's a paragraph about this person. Blah blah blah blah blah blah blah Blah blah blah blah blah blah blah Blah blah blah blah blah blah blah Blah blah blah blah blah blah blah Blah blah blah blah blah blah blah Blah blah blah blah blah blah blah Blah blah blah blah blah blah blah Blah blah blah blah blah blah blah.</p>
-       <br><a href="tel:1-408-555-5555">1-408-555-5555</a>
+    <div>
+        <label for="msg">Message:</label>
+        <textarea id="msg" name="user_message"></textarea>
     </div>
+    <div class="button">
+  <button type="submit">Send your message</button>
 </div>
-    <div class="container">  
-  <form id="contact" action="" method="post">
-    <h3>Quick Contact</h3>
-    <h4>Contact us today</h4>
-    <fieldset>
-      <input placeholder="Your name" type="text" tabindex="1" required autofocus>
-    </fieldset>
-    <fieldset>
-      <input placeholder="Your Email Address" type="email" tabindex="2" required>
-    </fieldset>
-    <fieldset>
-      <input placeholder="Your Phone Number" type="tel" tabindex="3" required>
-    </fieldset>
-    <fieldset>
-      <input placeholder="Your Web Site starts with http://" type="url" tabindex="4" required>
-    </fieldset>
-    <fieldset>
-      <textarea placeholder="Type your Message Here...." tabindex="5" required></textarea>
-    </fieldset>
-    <fieldset>
-      <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
-    </fieldset>
-      <!--THIS IS OVERLAPPING... LEARN HOW TO FIX IT SO RN EVERYTHING IS MESSED UP-->
-  </form>
-</div>
+</form>
+    </footer>
     </body>
 </html>
 <!--
 Here's what I need:
 twitter timeline code
 resumes from each of the girls
-iphone calling and texting links
 -->
