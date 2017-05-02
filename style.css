@@ -46,6 +46,17 @@ header{
     z-index: -1;
     margin: 10%;
 }
+header.home{
+    align-content: center;
+    height: 10%;
+    width: 50%;
+    top:0;
+    left:0;
+    position: relative;
+    padding-left: 40%;
+    z-index: -1;
+    margin: 05%;
+}
 
 h1,
 h2,
@@ -74,20 +85,64 @@ h6{
 
 p {
     font-weight: 300;
+    font-size: 14pt;
 }
 
 article{
-    margin: 5em auto;
-    padding: 5%;
+    margin: 5%;
+    padding: 10%;
     background-color: rgba(204, 255, 255, .2);
     border: 15px solid #fafafa;
 
 }
 img.logo{
 
-    margin: 5%;
-    width: 20%;
+    margin: 2%;
+    width: 25%;
     
+}
+
+img.small-left{
+    float:left;
+    border: 3px solid #ffffff;
+    margin: 1%;
+}
+figure.small-left {
+    position: relative;
+    float: left
+}
+figcaption.small-left {
+    background: rgba(0, 0, 0, 0.8);
+    color: #FFF;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 0% .8%;
+    margin-left: 1.8%;
+    margin-right: .05%;
+    margin-bottom: 1.6%;
+}
+img.small-right{
+    float:right;
+    border: 3px solid #ffffff;
+    margin: 1%;
+}
+figure.small-right {
+    position: relative;
+    float: right
+}
+figcaption.small-right {
+    background: rgba(0, 0, 0, 0.8);
+    color: #FFF;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 0% 2%;
+    margin-left: .01%;
+    margin-right: 1.8%;
+    margin-bottom: 1.6%;
 }
 
 figure {
@@ -105,15 +160,33 @@ figcaption {
     right: 0;
     padding: 0% .7%;
     margin-left: 5.4%;
-    margin-right: 4.6%;
+    margin-right: 4.7%;
     margin-bottom: .3%
 }
 
 .header{
+    font-style: italic;
     width:90%;
     margin-top: 2%;
     margin-left: 5%;
     border: 3px solid #ffffff;
+}
+
+blockquote{
+    padding: 0% 5%;
+    font-style: italic;
+    font-size:30px;
+    font-weight: 500;
+    line-height: 40px;
+}
+
+
+iframe{
+      border: 3px solid #ffffff;
+    float: right;
+        margin-left: 5.4%;
+    margin-right: 4.7%;
+    margin-bottom: .3%
 }
 /* CSS From Amina 04/27*
 Add me to CSS:
@@ -162,13 +235,13 @@ Contact*/
 
 body
 {
-        font-family: 'Raleway', sans-serif;
+    font-family: 'Raleway', sans-serif;
     font-weight: 300;
     line-height: 26px;
 
     height: 100%;
-  margin: 0;
-  padding: 0;
+    margin: 0;
+    padding: 0;
   
   /* make it look decent enough */
 
@@ -179,15 +252,20 @@ body
 a
 {
   text-decoration: none;
-  color: #232323;
+  color: #fff;
   
   transition: color 0.3s ease;
 }
 
-a:hover
-{
-  color: tomato;
+a:hover{
+    color: #98e9ea;
 }
+
+a:visited
+{
+  color: #f47142;
+}
+
 
 #menuToggle
 {
@@ -196,7 +274,7 @@ a:hover
   top: 50px;
   left: 50px;
   
-  z-index: 1;
+  z-index: 7;
   
   -webkit-user-select: none;
   user-select: none;
@@ -214,7 +292,7 @@ a:hover
   cursor: pointer;
   
   opacity: 0; /* hide this */
-  z-index: 2; /* and place it over the hamburger */
+  z-index: 7; /* and place it over the hamburger */
   
   -webkit-touch-callout: none;
 }
@@ -233,7 +311,7 @@ a:hover
   background: #cdcdcd;
   border-radius: 3px;
   
-  z-index: 1;
+  z-index:6;
   
   transform-origin: 4px 0px;
   
@@ -293,23 +371,32 @@ a:hover
   padding: 50px;
   padding-top: 125px;
   
-  background: #ededed;
+  background: #8b9fe5;
   list-style-type: none;
   -webkit-font-smoothing: antialiased;
   /* to stop flickering of text in safari */
   
   transform-origin: 0% 0%;
   transform: translate(-100%, 0);
-  
+  z-index: 5;
   transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
 }
 
 #menu li
 {
-  padding: 10px 0;
+    display: inline-block
+font-weight: 900;
+  padding: 10px 10px 10px 10px;
   font-size: 22px;
 }
 
+#menu li:hover{
+    background-color: #2386ef;
+}
+
+#menu a:visited{
+    color:#fff;
+}
 /*
  * And let's fade it in from the left
  */
@@ -318,3 +405,178 @@ a:hover
   transform: scale(1.0, 1.0);
   opacity: 1;
 }
+
+/*Rebecca CSS */
+
+ .column-left{ float: left; width: 33%; }
+    .column-right{ float: right; width: 33%; }
+    .column-center{ display: inline-block; width: 33%; }
+        img.authors{
+            width: 400px;
+            height: 400px;
+            position:fixed;
+            float:left;
+        }
+
+    form{
+        background-color: rgba(204, 255, 255, .2);
+        border: 15px solid #fafafa;
+        position:static;
+        bottom: 0;
+        align-content: center;
+         margin: 11%;
+       
+        }
+fieldset{
+    display: inline-block;
+    font-size: 14pt;
+}
+div.container {
+    background-color: rgba(204, 255, 255, .2);
+    border: 15px solid #fafafa;
+    align-content: center;
+    clear: both;
+    position: relative;
+    margin: 11%;
+    padding-left: 7%;
+     min-height: 125%;
+    z-index:-3;
+}
+.container-home{
+    
+
+}
+.column{
+    width:25%;
+    min-height: 125%;
+    float: left;
+    display: inline-grid;
+    margin:1%;
+    padding: 2%;
+    
+}
+.column img{
+    width: 90%;
+    height: auto;
+}
+
+button{
+    font-size: 14pt;
+}
+
+/*Begin Slideshow*/
+.slides {
+    padding: 0;
+    width: 900px;
+    height: 500px;
+    display: block;
+    margin: 0 auto;
+    position: relative;
+    border: 15px solid #fafafa;
+     background-color: rgba(204, 255, 255, .2);
+    z-index: 3;
+}
+
+.slides * {
+    user-select: none;
+    -ms-user-select: none;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -webkit-touch-callout: none;
+}
+
+.slides input { display: none; }
+
+.slide-container { display: block; }
+
+.slide {
+    top: 0;
+    opacity: 0;
+    width: 90%;
+    height: 100%;
+    display: block;
+    margin-left: 5%;
+    position: absolute;
+
+    transform: scale(0);
+
+    transition: all .7s ease-in-out;
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+}
+
+.nav label {
+    width: 100px;
+    height: 100%;
+    display: none;
+    position: absolute;
+
+	  opacity: 0;
+    z-index: 9;
+    cursor: pointer;
+
+    transition: opacity .2s;
+
+    color: #FFF;
+    font-size: 156pt;
+    text-align: center;
+    line-height: 380px;
+    font-family: "Varela Round", sans-serif;
+    background-color: rgba(255, 255, 255, .3);
+    text-shadow: 0px 0px 15px rgb(119, 119, 119);
+}
+
+.slide:hover + .nav label { opacity: 0.5; }
+
+.nav label:hover { opacity: 1; }
+
+.nav .next { right: 0; }
+
+input:checked + .slide-container  .slide {
+    opacity: 1;
+
+    transform: scale(1);
+
+    transition: opacity 1s ease-in-out;
+}
+
+input:checked + .slide-container .nav label { display: block; }
+
+.nav-dots {
+	width: 100%;
+	bottom: 9px;
+	height: 11px;
+	display: block;
+	position: absolute;
+	text-align: center;
+}
+
+.nav-dots .nav-dot {
+	top: -5px;
+	width: 11px;
+	height: 11px;
+	margin: 0 4px;
+	position: relative;
+	border-radius: 100%;
+	display: inline-block;
+	background-color: rgba(0, 0, 0, 0.6);
+}
+
+.nav-dots .nav-dot:hover {
+	cursor: pointer;
+	background-color: rgba(0, 0, 0, 0.8);
+}
+
+input#img-1:checked ~ .nav-dots label#img-dot-1,
+input#img-2:checked ~ .nav-dots label#img-dot-2,
+input#img-3:checked ~ .nav-dots label#img-dot-3,
+ {
+	background: rgba(0, 0, 0, 0.8);
+}
+
+
+/*slideshow ends*/
