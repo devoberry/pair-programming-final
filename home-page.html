@@ -1,18 +1,112 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Pair Programming</title>
-    <!--- add Google font ---> 
-    <!--- add link to CSS --->
+    
+    <title>
+    </title>
+        <link href="homepage.css" rel="stylesheet" type="text/css"/>
+       <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <link rel="shortcut icon" href="Logo-500.png" type="image/x-icon">
+<link rel="icon" href="favicon.ico" type="image/x-icon">
     </head>
 <body>
-    <div class="topnav" id="myTopnav">
-  <a href="#home">Home</a>
-  <a href="#news">News</a>
-  <a href="#contact">Contact</a>
-  <a href="#about">About</a>
-</div>
+       
+        <!--    Made by Erik Terwan    -->
+<!--   24th of November 2015   -->
+<!--    All rights reserved    -->
+<nav role="navigation">
+  <div id="menuToggle">
+    <!--
+    A fake / hidden checkbox is used as click reciever,
+    so you can use the :checked selector on it.
+    -->
+    <input type="checkbox" />
     
+    <!--
+    Some spans to act as a hamburger.
+    
+    They are acting like a real hamburger,
+    not that McDonalds stuff.
+    -->
+    <span></span>
+    <span></span>
+    <span></span>
+    
+    <!--
+    Too bad the menu has to be inside of the button
+    but hey, it's pure CSS magic.
+    -->
+      <!-- clock starts-->
+    <div class="clock">
+  <div class="top"></div>
+  <div class="right"></div>
+  <div class="bottom"></div>
+  <div class="left"></div>
+  <div class="center"></div>
+  <div class="shadow"></div>
+  <div class="hour"></div>
+  <div class="minute"></div>
+  <div class="second"></div>
+</div>
+<!-- clock ends-->  
+    <ul id="menu">
+      <a href="home-page.html"><li>Home</li></a>
+      <a href="Authors.html"><li>Authors</li></a>
+      <a href="Issue1.html"><li>The Great Barrier Reef</li></a>
+      <a href="Issue2.html"><li>Plastics</li></a>
+      <a href="Issue3.html"><li>Issue3</li></a>
+        <a href="Map.html" target="_blank"><li>Whos Fault</li></a>
+    </ul>
+  </div>
+</nav>
+
+ <header class="home"><img class="logo" src="Logo-500.png"/></header>
+
+      <!-- slides start-->
+    <ul class="slides">
+    <input type="radio" name="radio-btn" id="img-1" checked />
+    <li class="slide-container">
+		<div class="slide">
+		<a href="issue3.html"><img src="oil-spill.jpg"/></a>
+        </div>
+		<div class="nav">
+			<label for="img-3" class="prev">&#x2039;</label>
+			<label for="img-2" class="next">&#x203a;</label>
+		</div>
+    </li>
+
+
+    <input type="radio" name="radio-btn" id="img-2" />
+    <li class="slide-container">
+        <div class="slide">
+          <img src="pollution.jpg" />
+        </div>
+		<div class="nav">
+			<label for="img-1" class="prev">&#x2039;</label>
+			<label for="img-3" class="next">&#x203a;</label>
+		</div>
+    </li>
+
+    <input type="radio" name="radio-btn" id="img-3" />
+    <li class="slide-container">
+        <div class="slide">
+          <img src="GreatBarrierReef.png" />
+        </div>
+		<div class="nav">
+			<label for="img-2" class="prev">&#x2039;</label>
+			<label for="img-1" class="next">&#x203a;</label>
+		</div>
+    </li>
+     </ul>
+<!-- slides end-->
+    
+<!-- body starts -->
+    <div class="container">
+    
+    
+    
+    </div>
+<!-- body ends-->
     
     
     </body>
