@@ -12,9 +12,30 @@
             text-align: justify;
             margin: 10px;
         }
-        form{
+        footer{
+            background-color: aqua;
+            height: 400px;
+            width:100%;
+            overflow:hidden;
+        }
+        table.footer{
+            margin-left: 450px;
+        }
+        form.left{
             position:absolute;
-            bottom: 20px;
+            bottom: 100px;
+            text-align:left;
+            float:left;
+        }
+        td.center{
+            height:240px;
+            width:400px;
+            text-align:center;
+        }
+        td.right{
+            height:240px;
+            width:400px;
+            text-align:right;
         }
    div.container {
         width: 100%;
@@ -102,46 +123,23 @@ button {
 
 <tr>
 <td>
-    <p class="bio">Rebecca Walters is a junior at the 
-University of Oklahoma, studying 
-broadcast and online journalism. She's 
-worked on OUNightly since she was a 
-first semester freshman. She's worked 
-her way up to roles of web editor, 
-anchor and producer. Rebecca enjoys 
-skiing, makeup and the works of Kurt 
-Vonnegut. Above all, she is passionate 
-about combining data and human 
-perspective to tell important stories. 
-Check out her resume for more details 
-on what Rebecca's all about.<br>
-        <a href="/pair programming project/Devon-Gadberry-Resume.pdf" download>Download her resume here</a>
+    <p class="bio">Amina Switzer is a broadcast journalism sophomore at the University of Oklahoma. She is the Vice President of the OU Chapter of the Asian American Journalists Association, PR/Social Media Manager for Oklahoma College Broadcasters, and web editor, briefs anchor and producer for OU Nightly. She has experience with coding, online and broadcast journalism, on-air and on-camera work, and social media and web content management.<br>
+        <a href="/pair programming project/aminaresume.pdf" download>Download her resume here</a>
     <br><a href="tel:1-408-555-5555">Call Amina</a>
     <br><a href="sms:1-408-555-1212">Text Amina</a>
     </p>
     </td>
 <td>
     <p class="bio">Rebecca Walters is a junior at the 
-University of Oklahoma, studying 
-broadcast and online journalism. She's 
-worked on OUNightly since she was a 
-first semester freshman. She's worked 
-her way up to roles of web editor, 
-anchor and producer. Rebecca enjoys 
-skiing, makeup and the works of Kurt 
-Vonnegut. Above all, she is passionate 
-about combining data and human 
-perspective to tell important stories. 
-Check out her resume for more details 
-on what Rebecca's all about.<br>
-        <a href="/pair programming project/Devon-Gadberry-Resume.pdf" download>Download her resume here</a>
+University of Oklahoma, studying broadcast and online journalism. She's worked on OUNightly since she was a first semester freshman. She's worked her way up to roles of web editor, anchor and producer. Rebecca enjoys skiing, makeup and the works of Kurt Vonnegut. Above all, she is passionate about combining data and human perspective to tell important stories. Check out her resume for more details on what Rebecca's all about.<br>
+        <a href="/pair programming project/rbeccawaltersresume.pdf" download>Download her resume here</a>
     <br><a href="tel:1-408-555-5555">Call Rebecca</a>
     <br><a href="sms:1-408-555-1212">Text Rebecca</a>
     </p>
     </td>
 <td>
     <p class="bio"> Some think technology replaced our longing for magic... I say technology IS magic. With a few strokes of a keyboard, Art and Software combine to animate a logo onto the screen. A few clicks of a mouse can take a user to distant lands. As a student at the University of Oklahoma, I want to make that magic happen. Whether I'm coding for hours on end perfecting the padding, or I'm keyframing every single position of a motion graphic, I strive to create magic for the viewer with my work. <br>
-        <a href="/pair programming project/Devon-Gadberry-Resume.pdf" download>Download her resume here. </a>
+        <a href="/pair programming project/Devon-Gadberry-Resume.pdf" download>Download her resume here</a>
     <br><a href="tel:1-408-555-5555">Call Devon</a>
     <br><a href="sms:1-408-555-1212">Text Devon</a>
     </p>
@@ -151,14 +149,11 @@ on what Rebecca's all about.<br>
 </center>
 </table>
 <footer>
-    
-<form action="/my-handling-form-page" method="post">
-    <div>
-        <h3>Get in touch</h3>
+<form class="left" action="/my-handling-form-page" method="post">
+        <h3>Send us a message</h3>
         <h4>We want to hear from you!</h4>
         <label for="name">Name:</label>
         <input type="text" id="name" name="user_name">
-    </div>
     <div>
         <label for="mail">E-mail:</label>
         <input type="email" id="mail" name="user_mail">
@@ -171,6 +166,17 @@ on what Rebecca's all about.<br>
   <button type="submit">Send your message</button>
 </div>
 </form>
+    <table class="footer">
+    <td class="center">
+    <h3>Connect with us</h3>
+    <h4>We got that social type of media too.</h4>
+        
+    </td>
+    <td class="right">
+    <h3>Tweet us</h3>
+    <h4>We're big fans of Twitter.</h4>
+    </td>
+    </table>
     </footer>
     </body>
 </html>
