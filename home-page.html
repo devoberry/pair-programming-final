@@ -110,11 +110,27 @@
     <p>Alarmingly, but perhaps not surprisingly, the Australian government reports that sections of the reef are getting slammed again this year.</p>
 
 <p>Corals are polyp creatures that build their iconic limestone structures in cooperation with photosynthesizing algae. When ocean temperatures increase, the algae emit poisons. The corals then reject their symbiotic partners and succumb to disease and death. This occurred across a vast section of the northern Great Barrier Reef last year." - Washington Post, <a href="https://www.washingtonpost.com/opinions/the-great-barrier-reef-is-dying/2017/03/19/a1e1277a-0b37-11e7-93dc-00f9bdd74ed1_story.html?utm_term=.19f0409aa2c1" target="_blank"><i>The Great Barrier Reef is dying</a></i></p>
-<!-- clock-->        
-        
-    <!-- clock-->
+
     </div>
 <!-- body ends-->
+<!-- clock-->        
+ .clock-wrapper
+  .clock-border
+    .clock
+      %ul.minute-marks
+        - (1..6).each do |i|
+          %li.five
+          - (1..4).each do |j|
+            %li
+      .hour
+        .hand
+      .minute
+        .hand
+      .second
+        .hand           
+    
+ <!-- clock-->
+
     
     
     </body>
